@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+# load devutils for some action
+
+require 'rubygems' if RUBY_VERSION < '1.9'
+require 'devutils'
+
+Commands.start
