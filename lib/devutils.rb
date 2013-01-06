@@ -18,7 +18,12 @@ class Commands < Thor
     :type    => :boolean,
     :desc    => 'install guard for automated testing'
   def init(project_name)
+    @project_name = project_name
     Commands.source_root(File.expand_path('../..', __FILE__))
     directory('template', project_name)
   end
+
+  private
+
+  attr_reader :project_name
 end
