@@ -1,7 +1,10 @@
 source 'https://rubygems.org'
 
-group :development
+group :test do
   gem 'devutils'
+end
+
+group :development do
   <%= "gem 'devutils-docs'" if options[:docs] %>
   <%= "gem 'devutils-metrics'" if options[:metrics] %>
   <%= "gem 'devutils-guard'" if options[:guard] %>
