@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.rubygems_version = '1.8.24'
 
   s.files = `git ls-files`.split("\n")
-  s.extra_rdoc_files = ['CHANGELOG.rdoc', 'LICENSE.md', 'README.md', 'Thorfile']
+  s.extra_rdoc_files = ['LICENSE', 'README.md']
   s.executables = `git ls-files -- bin/*`.split("\n").map{|f| File.basename(f)}
   s.test_files = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.require_paths = ['lib']
