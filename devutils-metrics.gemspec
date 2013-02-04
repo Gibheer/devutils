@@ -19,7 +19,6 @@ Gem::Specification.new do |s|
   s.add_dependency('reek')
   s.add_dependency('flog')
   s.add_dependency('flay')
-  s.add_dependency('roodi')
   s.add_dependency('mutant')
   s.add_dependency('simplecov') if RUBY_VERSION >= '1.9'
   s.add_dependency('pelusa') if RUBY_ENGINE >= 'rbx'
